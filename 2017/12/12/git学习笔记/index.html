@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="12月初这段时间学习了一下git的一些基本命令。git init–初始化一个git仓库，init会初始化一个repo，并且在当前路径下创建一个.git文件夹 ###添加文件把一个文件添加到git仓库只需要两步git add &amp;lt;文件名字&amp;gt;git commit -m “写一个readme文件帮助你记录”-m不是必须的，但是应该对每次提交都有记录。git commit -a –allow-e">
+<meta name="description" content="12月初这段时间学习了一下git的一些基本命令。git init–初始化一个git仓库，init会初始化一个repo，并且在当前路径下创建一个.git文件夹 添加文件把一个文件添加到git仓库只需要两步git add &amp;lt;文件名字&amp;gt;git commit -m “写一个readme文件帮助你记录”-m不是必须的，但是应该对每次提交都有记录。git commit -a –allow-empt">
 <meta property="og:type" content="article">
 <meta property="og:title" content="git学习笔记">
 <meta property="og:url" content="http://yoursite.com/2017/12/12/git学习笔记/index.html">
 <meta property="og:site_name" content="MiranA&#39;s">
-<meta property="og:description" content="12月初这段时间学习了一下git的一些基本命令。git init–初始化一个git仓库，init会初始化一个repo，并且在当前路径下创建一个.git文件夹 ###添加文件把一个文件添加到git仓库只需要两步git add &amp;lt;文件名字&amp;gt;git commit -m “写一个readme文件帮助你记录”-m不是必须的，但是应该对每次提交都有记录。git commit -a –allow-e">
+<meta property="og:description" content="12月初这段时间学习了一下git的一些基本命令。git init–初始化一个git仓库，init会初始化一个repo，并且在当前路径下创建一个.git文件夹 添加文件把一个文件添加到git仓库只需要两步git add &amp;lt;文件名字&amp;gt;git commit -m “写一个readme文件帮助你记录”-m不是必须的，但是应该对每次提交都有记录。git commit -a –allow-empt">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-12-12T08:07:16.640Z">
+<meta property="og:updated_time" content="2017-12-12T08:14:10.735Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git学习笔记">
-<meta name="twitter:description" content="12月初这段时间学习了一下git的一些基本命令。git init–初始化一个git仓库，init会初始化一个repo，并且在当前路径下创建一个.git文件夹 ###添加文件把一个文件添加到git仓库只需要两步git add &amp;lt;文件名字&amp;gt;git commit -m “写一个readme文件帮助你记录”-m不是必须的，但是应该对每次提交都有记录。git commit -a –allow-e">
+<meta name="twitter:description" content="12月初这段时间学习了一下git的一些基本命令。git init–初始化一个git仓库，init会初始化一个repo，并且在当前路径下创建一个.git文件夹 添加文件把一个文件添加到git仓库只需要两步git add &amp;lt;文件名字&amp;gt;git commit -m “写一个readme文件帮助你记录”-m不是必须的，但是应该对每次提交都有记录。git commit -a –allow-empt">
 
 
 
@@ -300,18 +300,18 @@
 
       
         <p>12月初这段时间学习了一下git的一些基本命令。<br>git init–初始化一个git仓库，init会初始化一个repo，并且在当前路径下创建一个.git文件夹</p>
-<p>###添加文件<br>把一个文件添加到git仓库只需要两步<br>git add &lt;文件名字&gt;<br>git commit -m “写一个readme文件帮助你记录”<br>-m不是必须的，但是应该对每次提交都有记录。<br>git commit -a –allow-empty-message -m ‘’<br>windows平台下可能需要变成这样<br>git commit -a –allow-empty-message -m “”</p>
-<p>###查看工作区状态<br>git status 查询仓库当前的状态<br>-s 参数 -s表示short，-s的输出标记会有两列，第一列是对stage区域而言，第二列是对working目录<br>git diff 比较工作目录中当前文件和暂存区域快照之间的差异，也就是修改之后还没有暂存起来的变化的内容<br>–cached参数可以查看已经暂存起来的的文件和上次提交时的快照之间的差异</p>
-<p>###查看版本历史记录<br>git log 查看当前版本的所有操作记录<br>–oneline 每条log只显示一行<br>–number 显示number条<br>git reflog 查看所有的版本操作记录</p>
-<p>###版本回退命令<br>git reset<br>–hard –mixed –soft<br>soft(commit) &lt; mixed(commit + add) &lt; hard(commit + add + local working)<br>HEAD表示当前版本<br>HEAD^表示向前一个版本<br>HEAD^^表示向前两个版本<br>HEAD~100代表向前100个版本</p>
-<p>###替换本地改动命令<br>git checkout – &lt;文件名字&gt; 这个操作命令可以丢弃工作区，也就是本地更改</p>
-<p>###推送当前分支命令<br>git push 把当前分支推送到远程<br>-u参数 git不但会把本地的master分支内容推送到远程新的master分支，还会把本地master分支和远程的master分支关联起来</p>
-<p>###关联远程数据库命令<br>git remote add origin git@<server-name:path>/<repo-name>.git<br>关联后，使用命令git push -u origin master第一次推送master分支所有的内容<br>git支持多种协议，默认是ssh，也支持https，速度会稍微慢点。</repo-name></server-name:path></p>
-<p>###删除命令<br>git rm用于删除一个文件，如果一个文件已经被提交到版本库，不用担心误删，但是只能恢复到文件的最新版本</p>
-<p>###分支系列命令<br>git branch可以用来列出分支，创建分支和删除分支<br>git branch -v 参数可以看到每一个分支的最后一次提交<br>git branch 列出本地所有分支，当前分支会被星号标出<br>git branch &lt;分支的名字&gt; 创建一个新的分支<br>git branch -d &lt;分支的名字&gt; 删除一个分支<br>git checkout可以用来切换分支<br>git checkout &lt;分支的名字&gt; 切换到一个分支<br>git checkout -b &lt;分支的名字&gt; 创建并切换到新的分支<br>git checkout -b &lt;分支的名字&gt; = git branch &lt;分支的名字&gt; + git chechout &lt;分支的名字&gt;<br>git merge 把一个分支合并进当前的分支<br>当git无法自动合并分支的时候，一定要先解决冲突，冲突解决后，再提交。</p>
-<p>###显示分支合并图<br>git log –graph 分支合并图</p>
-<p>###git的stash命令<br>git stash把当前的改动压入栈<br>git stash list 查看stash目录<br>git stash apply取出stash中的上一个项目（stash@{0}），并且应用于当前的工作目录<br>git stash drop删除上一个项目，也可以指定删除<br>git stash pop = git stash apply + git stash drop<br>git stash clear 删除所有项目</p>
-<p>###git的标签系列命令<br>git tag &lt;标签的名字&gt;默认是HEAD 也可以指定一个commit id<br>-a -m “你想输入的关于此标签的信息”<br>-s 可以用gpg签名标签<br>git tag查看所有标签<br>git push origin &lt;标签名字&gt; 可以推送一个本地标签<br>git push origin –tags 可以推送全部未推送过的本地标签<br>git tag -d &lt;标签的名字&gt; 可以删除一个本地标签<br>git push origin :refs/tags/&lt;标签的名字&gt; 可以删除一个远程标签</p>
+<h3 id="添加文件"><a href="#添加文件" class="headerlink" title="添加文件"></a>添加文件</h3><p>把一个文件添加到git仓库只需要两步<br>git add &lt;文件名字&gt;<br>git commit -m “写一个readme文件帮助你记录”<br>-m不是必须的，但是应该对每次提交都有记录。<br>git commit -a –allow-empty-message -m ‘’<br>windows平台下可能需要变成这样<br>git commit -a –allow-empty-message -m “”</p>
+<h3 id="查看工作区状态"><a href="#查看工作区状态" class="headerlink" title="查看工作区状态"></a>查看工作区状态</h3><p>git status 查询仓库当前的状态<br>-s 参数 -s表示short，-s的输出标记会有两列，第一列是对stage区域而言，第二列是对working目录<br>git diff 比较工作目录中当前文件和暂存区域快照之间的差异，也就是修改之后还没有暂存起来的变化的内容<br>–cached参数可以查看已经暂存起来的的文件和上次提交时的快照之间的差异</p>
+<h3 id="查看版本历史记录"><a href="#查看版本历史记录" class="headerlink" title="查看版本历史记录"></a>查看版本历史记录</h3><p>git log 查看当前版本的所有操作记录<br>–oneline 每条log只显示一行<br>–number 显示number条<br>git reflog 查看所有的版本操作记录</p>
+<h3 id="版本回退命令"><a href="#版本回退命令" class="headerlink" title="版本回退命令"></a>版本回退命令</h3><p>git reset<br>–hard –mixed –soft<br>soft(commit) &lt; mixed(commit + add) &lt; hard(commit + add + local working)<br>HEAD表示当前版本<br>HEAD^表示向前一个版本<br>HEAD^^表示向前两个版本<br>HEAD~100代表向前100个版本</p>
+<h3 id="替换本地改动命令"><a href="#替换本地改动命令" class="headerlink" title="替换本地改动命令"></a>替换本地改动命令</h3><p>git checkout – &lt;文件名字&gt; 这个操作命令可以丢弃工作区，也就是本地更改</p>
+<h3 id="推送当前分支命令"><a href="#推送当前分支命令" class="headerlink" title="推送当前分支命令"></a>推送当前分支命令</h3><p>git push 把当前分支推送到远程<br>-u参数 git不但会把本地的master分支内容推送到远程新的master分支，还会把本地master分支和远程的master分支关联起来</p>
+<h3 id="关联远程数据库命令"><a href="#关联远程数据库命令" class="headerlink" title="关联远程数据库命令"></a>关联远程数据库命令</h3><p>git remote add origin git@<server-name:path>/<repo-name>.git<br>关联后，使用命令git push -u origin master第一次推送master分支所有的内容<br>git支持多种协议，默认是ssh，也支持https，速度会稍微慢点。</repo-name></server-name:path></p>
+<h3 id="删除命令"><a href="#删除命令" class="headerlink" title="删除命令"></a>删除命令</h3><p>git rm用于删除一个文件，如果一个文件已经被提交到版本库，不用担心误删，但是只能恢复到文件的最新版本</p>
+<h3 id="分支系列命令"><a href="#分支系列命令" class="headerlink" title="分支系列命令"></a>分支系列命令</h3><p>git branch可以用来列出分支，创建分支和删除分支<br>git branch -v 参数可以看到每一个分支的最后一次提交<br>git branch 列出本地所有分支，当前分支会被星号标出<br>git branch &lt;分支的名字&gt; 创建一个新的分支<br>git branch -d &lt;分支的名字&gt; 删除一个分支<br>git checkout可以用来切换分支<br>git checkout &lt;分支的名字&gt; 切换到一个分支<br>git checkout -b &lt;分支的名字&gt; 创建并切换到新的分支<br>git checkout -b &lt;分支的名字&gt; = git branch &lt;分支的名字&gt; + git chechout &lt;分支的名字&gt;<br>git merge 把一个分支合并进当前的分支<br>当git无法自动合并分支的时候，一定要先解决冲突，冲突解决后，再提交。</p>
+<h3 id="显示分支合并图"><a href="#显示分支合并图" class="headerlink" title="显示分支合并图"></a>显示分支合并图</h3><p>git log –graph 分支合并图</p>
+<h3 id="git的stash命令"><a href="#git的stash命令" class="headerlink" title="git的stash命令"></a>git的stash命令</h3><p>git stash把当前的改动压入栈<br>git stash list 查看stash目录<br>git stash apply取出stash中的上一个项目（stash@{0}），并且应用于当前的工作目录<br>git stash drop删除上一个项目，也可以指定删除<br>git stash pop = git stash apply + git stash drop<br>git stash clear 删除所有项目</p>
+<h3 id="git的标签系列命令"><a href="#git的标签系列命令" class="headerlink" title="git的标签系列命令"></a>git的标签系列命令</h3><p>git tag &lt;标签的名字&gt;默认是HEAD 也可以指定一个commit id<br>-a -m “你想输入的关于此标签的信息”<br>-s 可以用gpg签名标签<br>git tag查看所有标签<br>git push origin &lt;标签名字&gt; 可以推送一个本地标签<br>git push origin –tags 可以推送全部未推送过的本地标签<br>git tag -d &lt;标签的名字&gt; 可以删除一个本地标签<br>git push origin :refs/tags/&lt;标签的名字&gt; 可以删除一个远程标签</p>
 
       
     </div>
@@ -396,8 +396,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -441,6 +450,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#添加文件"><span class="nav-number">1.</span> <span class="nav-text"><a href="#&#x6DFB;&#x52A0;&#x6587;&#x4EF6;" class="headerlink" title="&#x6DFB;&#x52A0;&#x6587;&#x4EF6;"></a>&#x6DFB;&#x52A0;&#x6587;&#x4EF6;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查看工作区状态"><span class="nav-number">2.</span> <span class="nav-text"><a href="#&#x67E5;&#x770B;&#x5DE5;&#x4F5C;&#x533A;&#x72B6;&#x6001;" class="headerlink" title="&#x67E5;&#x770B;&#x5DE5;&#x4F5C;&#x533A;&#x72B6;&#x6001;"></a>&#x67E5;&#x770B;&#x5DE5;&#x4F5C;&#x533A;&#x72B6;&#x6001;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查看版本历史记录"><span class="nav-number">3.</span> <span class="nav-text"><a href="#&#x67E5;&#x770B;&#x7248;&#x672C;&#x5386;&#x53F2;&#x8BB0;&#x5F55;" class="headerlink" title="&#x67E5;&#x770B;&#x7248;&#x672C;&#x5386;&#x53F2;&#x8BB0;&#x5F55;"></a>&#x67E5;&#x770B;&#x7248;&#x672C;&#x5386;&#x53F2;&#x8BB0;&#x5F55;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#版本回退命令"><span class="nav-number">4.</span> <span class="nav-text"><a href="#&#x7248;&#x672C;&#x56DE;&#x9000;&#x547D;&#x4EE4;" class="headerlink" title="&#x7248;&#x672C;&#x56DE;&#x9000;&#x547D;&#x4EE4;"></a>&#x7248;&#x672C;&#x56DE;&#x9000;&#x547D;&#x4EE4;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#替换本地改动命令"><span class="nav-number">5.</span> <span class="nav-text"><a href="#&#x66FF;&#x6362;&#x672C;&#x5730;&#x6539;&#x52A8;&#x547D;&#x4EE4;" class="headerlink" title="&#x66FF;&#x6362;&#x672C;&#x5730;&#x6539;&#x52A8;&#x547D;&#x4EE4;"></a>&#x66FF;&#x6362;&#x672C;&#x5730;&#x6539;&#x52A8;&#x547D;&#x4EE4;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#推送当前分支命令"><span class="nav-number">6.</span> <span class="nav-text"><a href="#&#x63A8;&#x9001;&#x5F53;&#x524D;&#x5206;&#x652F;&#x547D;&#x4EE4;" class="headerlink" title="&#x63A8;&#x9001;&#x5F53;&#x524D;&#x5206;&#x652F;&#x547D;&#x4EE4;"></a>&#x63A8;&#x9001;&#x5F53;&#x524D;&#x5206;&#x652F;&#x547D;&#x4EE4;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关联远程数据库命令"><span class="nav-number">7.</span> <span class="nav-text"><a href="#&#x5173;&#x8054;&#x8FDC;&#x7A0B;&#x6570;&#x636E;&#x5E93;&#x547D;&#x4EE4;" class="headerlink" title="&#x5173;&#x8054;&#x8FDC;&#x7A0B;&#x6570;&#x636E;&#x5E93;&#x547D;&#x4EE4;"></a>&#x5173;&#x8054;&#x8FDC;&#x7A0B;&#x6570;&#x636E;&#x5E93;&#x547D;&#x4EE4;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#删除命令"><span class="nav-number">8.</span> <span class="nav-text"><a href="#&#x5220;&#x9664;&#x547D;&#x4EE4;" class="headerlink" title="&#x5220;&#x9664;&#x547D;&#x4EE4;"></a>&#x5220;&#x9664;&#x547D;&#x4EE4;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分支系列命令"><span class="nav-number">9.</span> <span class="nav-text"><a href="#&#x5206;&#x652F;&#x7CFB;&#x5217;&#x547D;&#x4EE4;" class="headerlink" title="&#x5206;&#x652F;&#x7CFB;&#x5217;&#x547D;&#x4EE4;"></a>&#x5206;&#x652F;&#x7CFB;&#x5217;&#x547D;&#x4EE4;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#显示分支合并图"><span class="nav-number">10.</span> <span class="nav-text"><a href="#&#x663E;&#x793A;&#x5206;&#x652F;&#x5408;&#x5E76;&#x56FE;" class="headerlink" title="&#x663E;&#x793A;&#x5206;&#x652F;&#x5408;&#x5E76;&#x56FE;"></a>&#x663E;&#x793A;&#x5206;&#x652F;&#x5408;&#x5E76;&#x56FE;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#git的stash命令"><span class="nav-number">11.</span> <span class="nav-text"><a href="#git&#x7684;stash&#x547D;&#x4EE4;" class="headerlink" title="git&#x7684;stash&#x547D;&#x4EE4;"></a>git&#x7684;stash&#x547D;&#x4EE4;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#git的标签系列命令"><span class="nav-number">12.</span> <span class="nav-text"><a href="#git&#x7684;&#x6807;&#x7B7E;&#x7CFB;&#x5217;&#x547D;&#x4EE4;" class="headerlink" title="git&#x7684;&#x6807;&#x7B7E;&#x7CFB;&#x5217;&#x547D;&#x4EE4;"></a>git&#x7684;&#x6807;&#x7B7E;&#x7CFB;&#x5217;&#x547D;&#x4EE4;</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
