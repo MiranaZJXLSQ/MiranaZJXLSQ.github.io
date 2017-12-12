@@ -432,8 +432,7 @@
       
         
           
-            <p>#mac上安装python</p>
-<hr>
+            <h1 id="mac上安装python"><a href="#mac上安装python" class="headerlink" title="mac上安装python"></a>mac上安装python</h1><hr>
 <p>mac系统是自带的python的，但是mac系统里面有很多系统工具依赖于python，修改了python的版本，很多依赖python的系统工具也无法使用。开始的时候我看了别人的博客，想采用pyenv这种方式在管理python版本。  </p>
 <h3 id="使用brew安装pyenv"><a href="#使用brew安装pyenv" class="headerlink" title="使用brew安装pyenv"></a>使用brew安装pyenv</h3><p>默认你装好了brew<br><code>brew install pyenv</code><br>然后加入环境变量<br><code>$echo &#39;export PYENV_ROOT=&quot;$HOME/.pyenv&quot;&#39;&gt;&gt;~/.zshrc</code><br><code>$echo &#39;export PYENV_ROOT/bin:$PATH&quot;&#39;&gt;&gt;~/.zshrc</code><br><code>$echo &#39;eval &quot;$(pyenv init -)&quot;&#39;&gt;&gt;~/.zshrc</code><br><code>$exec $SHELL -l</code><br>如果是你是bash的话或者是其他shell，可以把后面的配置文件的名字改成你想对应的shell的配置文件的名字。<br>三个写入文件中的语句的顺序是不能改变的，不然会导致”pyenv global/local”将不起作用。  </p>
 <h3 id="使用pyenv安装python"><a href="#使用pyenv安装python" class="headerlink" title="使用pyenv安装python"></a>使用pyenv安装python</h3><p>查看可安装的python版本<br><code>pyenv install -l</code><br>选择好你要安装的版本<br><code>pyenv install &lt;version&gt;</code><br>安装完成之后对数据库进行更新<br><code>pyenv rehash</code><br>查看已经用pyenv安装的python版本<br><code>pyenv versions</code><br>切换python版本<br><code>pyenv global/local &lt;version&gt;</code><br>global会切换全局的python版本，而local命令会在当前目录下创建.python_version，管理当前目录及其子目录的python版本。<br>我用这种方法尝试了，但是始终下载不下来，速度炒鸡炒鸡炒鸡慢，可能是我比较着急，后来就换了一种不用pyenv的方法。</p>
